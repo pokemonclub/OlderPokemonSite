@@ -19,8 +19,6 @@ class dex():
         cherrypy.engine.subscribe('start', self.start)
         cherrypy.engine.subscribe('stop', self.stop)
 
-
-
     def start(self):
         self.client = MongoClient("mongodb://majoridiocy:nick2693@107.170.240.186:27017")
         self.db = self.client.dex
@@ -51,8 +49,7 @@ class dex():
                     return setup.env.get_template("pkmn.html").render(pkmn=x)
         else:
             return "Not Found"
-
-
+    
     @cherrypy.expose
     def index(self):
         return setup.env.get_template("index_page.html").render()
