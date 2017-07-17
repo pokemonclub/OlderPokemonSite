@@ -23,8 +23,8 @@ if "__main__" == __name__:
     if len(sys.argv) > 1:
         if sys.argv[1] == "True":
             cherrypy.config.update({
-            'server.socket_host': '0.0.0.0',
-            'server.socket_port': 80,
+            'server.socket_host': '127.0.0.1',
+            'server.socket_port': 8080,
 
         })
 
