@@ -287,4 +287,7 @@ class main():
             if x.challonge != "":
                 challonge_link = x.challonge
                 break
-        return setup.env.get_template("sjsupkmnclub.html").render(tournaments=sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
+        header = setup.env.get_template("head.html").render(title="SJSU Pokémon Club")
+        navbar = setup.get_template("navbar.html")
+        footer = setup.get_template("footer.html")
+        return setup.env.get_template("home.html").render(header=header, navbar=navbar, footer=footer, tournaments=sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
