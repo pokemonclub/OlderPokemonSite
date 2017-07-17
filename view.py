@@ -49,7 +49,7 @@ class dex():
                     return setup.env.get_template("pkmn.html").render(pkmn=x)
         else:
             return "Not Found"
-    
+
     @cherrypy.expose
     def index(self):
         return setup.env.get_template("index_page.html").render()
@@ -189,7 +189,6 @@ class gym_leaders():
             return output
 
 class tournament():
-
     def __init__(self, name, date, first, second, third, prize="", challonge=""):
         self.name = name
         self.date_obj = date
@@ -201,14 +200,12 @@ class tournament():
         self.challonge = challonge
 
 class regulation():
-
     def __init__(self, title, link, active):
         self.title = title
         self.link = link
         self.active = active
 
 class officer():
-
     def __init__(self, name, position):
         self.name = name
         self.position = position
@@ -240,6 +237,7 @@ class main():
                 tournament("Monotype", date(2016, 12, 2), "Rianna \"the Bops\" Nandan", "Nick Boyd", "Yair Aragundi", challonge="http://challonge.com/MonotypeFall16"),
                 tournament("Team Rocket", date(2017, 2, 3), "Nick Boyd", "Will Giallo", "Ed Martinez", challonge="http://challonge.com/SJSUTR2017")
             ]
+
     regulations = [
         regulation("Club Tournament Regulations","https://docs.google.com/document/d/1d5JiFS_6BsYqIfMRnN7J20UPxzovNyXQ179j2T9YVAo/edit", False),
         regulation("Contest Tournament","https://docs.google.com/document/d/1q15GqdMIj3aiA3s64VkQRVKDJdbry0dsh2YZKelb9-w/edit", False),
@@ -273,7 +271,6 @@ class main():
     for reg in regulations:
         if not reg.active:
             regulations.remove(reg)
-
 
     officers = [
         ["Spring 2017: Another New Game", officer("Khaila Zherine Flores", "President"), officer("William Giallo", "Vice President"), officer("Jason Yan", "Treasurer"), officer("Kevin Nguyen", "Secretary"),officer("Roxas Nick", "Publicist"),officer("Nick Boyd", "Web Master"),officer("Claire Koperwas", "Jr. Web Master"),officer("Tad Mikasa", "Event Coordinator"),officer("Eduardo Martinez", "Social Media Manager"),officer("Patrick Rettinhouse", "Intern")],

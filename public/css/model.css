@@ -4,11 +4,48 @@ hr.content-divider {
 }
 
 hr.content-divider::after {
-  content: url(/static/images/pixelball.png);
+  content: url(/static/images/pokeballs/pixelball.png);
   display: inline-block;
   position: relative;
   top: -15px;
 	padding: 0 10px;
 	background: #FFFFFF;
 	font-size: 18px;
+}
+
+.content-section {
+  overflow: hidden;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.img-bracket {
+  width: 100%;
+  height: 750px;
+  overflow-y: scroll;
+}
+
+.img-calendar {
+  scrolling: no;
+  max-width: 50%;
+  height: auto;
+}
+
+.img-header {
+  max-width: 50%;
+}
+
+.list-box {
+  overflow-y: scroll;
+  height: 500px;
+  width: auto;
+}
+
+@media(max-width:991px) {
+  .img-calendar {
+    scrolling: no;
+    width: 100%;
+    height: auto;
+  }
 }

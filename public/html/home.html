@@ -7,24 +7,86 @@
       <!--TODO-->
     </header>
     <div class="container">
+
       <hr class="content-divider">
+
+      <!-- About Us Section -->
       <div class="content-section" id="about">
-        <!--TODO-->
+        <img class="img-responsive img-circle img-header pull-right" alt="Pokeball" src="/static/images/pokeballs/pokeball0.png">
+        <h1>Become A Fellow Champion, <a href="<!-- TODO -->">Join Us!</a></h1>
+        <p>This club draws on nostalgia and is a growing community that is welcoming to all who share the same interest, or are just beginning to share that interest! Pokemon Club is new to Campus as of Spring 2015, but it is undeniable that this club provides its members with a sense of community outside of their rooms and outside of their jobs. Come join us at club, make new friends, rivals, and discover what it is like to be a part of our growing community. Remember, anyone can join, and there are no member fees! <a href="<!-- TODO -->">Sign up here!</a>You can also buy our Club T-shirt <a href="https://www.teepublic.com/show/372613-pokemon-club-t-shirt-2016">here!</a></p>
       </div>
+
+      <hr class="content-divider">
+
+      <!-- Events Section -->
       <div class="content-section" id="events">
-        <!--TODO-->
+        <h1>Check Out this Semester's Events!</h1>
+        <iframe class="img-responsive img-calendar pull-left" src="https://calendar.google.com/calendar/embed?title=Pok%C3%A9mon%20Club%20Events&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles"></iframe>
+        <p>Every month we will have events prepared for our members. These events include game nights, movie nights, tournaments, and various collaborations. Keep an eye out for our upcoming events- they are available on this calendar.<br><br>More details and information about each event of this month  can be found <a href="https://www.facebook.com/groups/SJSUPKMN/">here</a></p>
       </div>
+
+      <hr class="content-divider">
+
+      <!-- Tournament History Section -->
       <div class="content-section" id="certTrainers">
-        <!--TODO-->
+        <h1>Tournament Results! <i class="fa fa-trophy"></i></h1>
+        <img class="img-responsive center-block" src="/static/images/battleStart.gif">
+        <div class="text-center list-box">
+          <p>
+            {% for t in tournaments %}
+            {{t.date}}<br>
+            {{t.name}} Tournament Champions<br>
+            First Place: {{t.first}}<br>
+            Second Place: {{t.second}}<br>
+            Third Place: {{t.third}}<br>
+            <br>
+            {% endfor %}
+          </p>
+        </div>
       </div>
+
+      <hr class="content-divider">
+
       <div class="content-section" id="replay">
-        <!--TODO-->
+        <h1>Most Recent Tournament Bracket</h1>
+        <iframe src="{{c_link}}" frameborder="10" allowtransparency="true"></iframe>
       </div>
+
+      <hr class="content-divider">
+
       <div class="content-section" id="regulations">
-        <!--TODO-->
+        <img class="img-responsive img-header pull-right" src="/static/images/profOak.png">
+        <h1>Tournament Regulations!</h1>
+        <div class="text-center list-box">
+          <p>
+            {% for regulation in regulations  %}
+            <a href="{{regulation.link}}">{{regulation.title}}</a><br>
+            {% endfor %}
+          </p>
+        </div>
       </div>
-      <div class="content-section" id="officers">
-        <!--TODO-->
+
+      <hr class="content-divider">
+
+      <div class="content-section" id="history">
+        <h1>Hall of Fame!</h1>
+        <div id="photos" class="pull-right" style="display: inline;">
+          <blockquote class="imgur-embed-pub" lang="en" data-id="a/oMudu"><a href="//imgur.com/a/oMudu">SJSU Pokemon Club Website Album</a></blockquote>
+          <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        </div>
+        <div class="pull-left list-box">
+          {% for semester in officers %}
+          <h2>{{semester[0]}}</h2>
+          <p>
+            {% for officer in semester %}
+            {% if loop.index != 1 %}
+            {{officer.position}}: {{officer.name}}<br>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </p>
+        </div>
       </div>
     </div>
     {{footer}}
