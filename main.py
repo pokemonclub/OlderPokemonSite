@@ -1,5 +1,4 @@
-import cherrypy
-import os, sys
+import os, sys, cherrypy, jinja2
 from datetime import date
 
 if __name__ == "__main__":
