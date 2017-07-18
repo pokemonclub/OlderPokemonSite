@@ -20,13 +20,10 @@ if "__main__" == __name__:
     #cherrypy.tree.mount(view.calc(), "/calc", conf)
     #cherrypy.tree.mount(view.gym_leaders(), "/gyms", conf)
 
-    if len(sys.argv) > 1:
-        if sys.argv[1] == "True":
-            cherrypy.config.update({
+    cherrypy.config.update({
             'server.socket_host': '127.0.0.1',
-            'server.socket_port': 80,
-
-        })
+            'server.socket_port': 8080,
+            })
 
     cherrypy.engine.start()
     cherrypy.engine.block()
