@@ -1,3 +1,5 @@
+from datetime import date
+
 #Helper Classes
 class tournament():
     def __init__(self, name, date, first, second, third, prize="", challonge=""):
@@ -110,7 +112,6 @@ class home():
 import os, cherrypy, sys, re, smtplib, string
 from Tkinter import Image
 from jinja2 import Template, Environment, FileSystemLoader
-from datetime import date
 from operator import attrgetter
 from email.mime.text import MIMEText
 
