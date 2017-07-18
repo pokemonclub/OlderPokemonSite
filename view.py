@@ -1,4 +1,30 @@
-class main():
+#Helper Classes
+class tournament():
+    def __init__(self, name, date, first, second, third, prize="", challonge=""):
+        self.name = name
+        self.date_obj = date
+        self.date = date.strftime("%d %B %Y")
+        self.first = first
+        self.second = second
+        self.third = third
+        self.prize = prize
+        self.challonge = challonge
+
+class regulation():
+    def __init__(self, title, link, active):
+        self.title = title
+        self.link = link
+        self.active = active
+
+class officer():
+    def __init__(self, name, position):
+        self.name = name
+        self.position = position
+
+
+
+#Home Page
+class home():
     tourneys = [
     tournament("Monotype", date(2015,11,20), "Nick Boyd", "Rianna \"the Bops\" Nandan", "Ty Garcia", challonge="http://challonge.com/sjsumonotypefall2015"),
     tournament("Cute", date(2016, 3, 18), "Shayda Sophia", "Javier Ayala", "Brenna Botzheim"),
@@ -270,26 +296,4 @@ class gym_leaders():
             #    save_file.write(input['gym_leader'] + ' challenged by ' + input['name'] + ' on ' + input['format'] + ' with ' + input['team'])
             output = setup.env.get_template("challenge.html").render(input=input)
             return output
-
-class tournament():
-    def __init__(self, name, date, first, second, third, prize="", challonge=""):
-        self.name = name
-        self.date_obj = date
-        self.date = date.strftime("%d %B %Y")
-        self.first = first
-        self.second = second
-        self.third = third
-        self.prize = prize
-        self.challonge = challonge
-
-class regulation():
-    def __init__(self, title, link, active):
-        self.title = title
-        self.link = link
-        self.active = active
-
-class officer():
-    def __init__(self, name, position):
-        self.name = name
-        self.position = position
 '''

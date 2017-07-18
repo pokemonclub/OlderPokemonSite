@@ -14,7 +14,7 @@ if "__main__" == __name__:
         }
     }
 
-    cherrypy.tree.mount(view.main(), "/", conf)
+    cherrypy.tree.mount(view.home(), "/", conf)
     #cherrypy.tree.mount(view.dex(), "/dex", conf)
     #cherrypy.tree.mount(view.calc(), "/calc", conf)
     #cherrypy.tree.mount(view.gym_leaders(), "/gyms", conf)
