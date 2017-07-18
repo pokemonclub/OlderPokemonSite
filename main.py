@@ -1,6 +1,5 @@
 import cherrypy
-import setup, os, sys
-import view
+import setup, os, sys, view
 
 if "__main__" == __name__:
     setup.init()
