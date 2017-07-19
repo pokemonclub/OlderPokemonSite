@@ -4,7 +4,7 @@ hr.content-divider {
 }
 
 hr.content-divider::after {
-  background: url(/static/images/pokeballs/pixelball.png);
+  content: url(/static/images/pokeballs/pixelball.png);
   height:30px;
   display: block;
   position: relative;
