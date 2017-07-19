@@ -4,13 +4,13 @@ hr.content-divider {
 }
 
 hr.content-divider::after {
-  content: url(/static/images/pokeballs/pixelball.png);
-  height:10px;
-  display: inline-block;
+  background: url(/static/images/pokeballs/pixelball.png);
+  height:30px;
+  display: block;
   position: relative;
   top: -15px;
 	padding: 0 10px;
-	background: #FFFFFF;
+	background-color: #FFFFFF;
 	font-size: 18px;
 }
 
