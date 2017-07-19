@@ -107,10 +107,10 @@ if __name__ == "__main__":
                 if x.challonge != "":
                     challonge_link = x.challonge
                     break
-            header = setup.env.get_template("head.html").render(title="SJSU Pok&eacute;mon Club")
-            navbar = setup.env.get_template("navbar.html")
-            footer = setup.env.get_template("footer.html")
-            return setup.env.get_template("home.html").render(header=header, navbar=navbar, footer=footer, tournaments=sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
+            header = env.get_template("head.html").render(title="SJSU Pok&eacute;mon Club")
+            navbar = env.get_template("navbar.html")
+            footer = env.get_template("footer.html")
+            return env.get_template("home.html").render(header=header, navbar=navbar, footer=footer, tournaments=sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
 
 
 
