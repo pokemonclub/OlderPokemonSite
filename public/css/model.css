@@ -1,5 +1,8 @@
 hr.content-divider {
-  border-top: 4px double #FFFFFF;
+  padding: 0px;
+  border: 0px;
+  border-top: medium double #696969;
+  color: #696969;
   text-align: center;
 }
 
