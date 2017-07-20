@@ -1,6 +1,5 @@
 hr.content-divider {
   display: block;
-  padding: 0px;
   border: 0px;
   border-top: medium double #696969;
   color: #696969;
@@ -10,6 +9,7 @@ hr.content-divider {
   background-position: center;
   background-repeat: no-repeat;
   height:30px;
+  padding: 0 2em;
 }
 
 /*hr.content-divider::after {
