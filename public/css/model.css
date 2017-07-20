@@ -12,11 +12,12 @@ hr.content-divider::after{
   display: block;
   position: absolute;
   background: #696969;
-  background: -webkit-linear-gradient(#696969 1px, #FFFFFF 1px, #696969 1px);
-  background: -o-linear-gradient(#696969 1px, #FFFFFF 1px, #696969 1px);
-  background: -moz-linear-gradient(#696969 1px, #FFFFFF 1px, #696969 1px);
-  background: linear-gradient(#696969 1px, #FFFFFF 1px, #696969 1px);
+  background: -webkit-linear-gradient(#696969 1px, #FFFFFF 2px, #696969 1px);
+  background: -o-linear-gradient(#696969 1px, #FFFFFF 2px, #696969 1px);
+  background: -moz-linear-gradient(#696969 1px, #FFFFFF 2px, #696969 1px);
+  background: linear-gradient(#696969 1px, #FFFFFF 2px, #696969 1px);
   top: 15px;
+  height: 5px;
 }
 hr.content-divider::before{
   left: 0;
