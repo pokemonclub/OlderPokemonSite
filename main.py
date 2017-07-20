@@ -4,16 +4,16 @@ from datetime import date
 if __name__ == "__main__":
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("public/html"))
 
-    conf = {
-        '/':{
-            'tools.sessions.on':True,
-            'tools.staticdir.root': os.path.abspath(os.getcwd())
-        },
-        '/static':{
-            'tools.staticdir.on':True,
-            'tools.staticdir.dir': '/public'
-        }
-    }
+    #conf = {
+#        '/':{
+#            'tools.sessions.on':True,
+#            'tools.staticdir.root': os.path.abspath(os.getcwd())
+#        },
+#        '/static':{
+#            'tools.staticdir.on':True,
+#            'tools.staticdir.dir': '/public'
+#        }
+#    }
 
     #Helper Classes
     class tournament():
