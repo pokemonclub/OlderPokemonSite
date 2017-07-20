@@ -1,18 +1,30 @@
-hr.content-divider {
-  display: block;
-  border: 0px;
-  border-top: medium double #696969;
-  color: #696969;
-  background-color: #FFFFFF;
-  background: url('/static/images/pokeballs/pixelball.png') no-repeat top center;
-  background-size: contain;
-  height:30px;
-  position: relative;
+hr.content-divider{
+    background: url('/static/images/pokeballs/pixelball.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 18px;
+    border: 0;
+    position: relative;
 }
-
-/*hr.content-divider::after {
-
-}*/
+hr.content-divider:before,
+hr.content-divider:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 2px;
+    top: 8px;
+}
+hr.content-divider:before {
+    left: 0;
+    right: 50%;
+    margin-right: 10px;
+}
+hr.content-divider:after {
+    right: 0;
+    left: 50%;
+    margin-left: 10px;
+}
 
 .content-section {
   overflow: hidden;
