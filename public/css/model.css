@@ -4,19 +4,15 @@ hr.content-divider {
   border-top: medium double #696969;
   color: #696969;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 hr.content-divider::after {
-  background: url(/static/images/pokeballs/pixelball.png);
+  background-image: url('/static/images/pokeballs/pixelball.png');
   background-size: contain;
   background-repeat: no-repeat;
   height:30px;
   display: block;
-  position: relative;
-  top: -15px;
-	padding: 0 10px;
-	background-color: #FFFFFF;
-	font-size: 18px;
 }
 
 .content-section {
