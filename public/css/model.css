@@ -9,7 +9,7 @@ hr.content-divider {
   background-position: center;
   background-repeat: no-repeat;
   height:30px;
-  padding: 0 2em;
+  position: relative;
 }
 
 /*hr.content-divider::after {
