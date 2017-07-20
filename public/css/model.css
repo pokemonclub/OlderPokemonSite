@@ -5,9 +5,9 @@ hr.content-divider {
   border-top: medium double #696969;
   color: #696969;
   background-color: #FFFFFF;
-  text-align: center;
   background-image: url('/static/images/pokeballs/pixelball.png');
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   height:30px;
 }
