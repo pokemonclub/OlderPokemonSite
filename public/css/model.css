@@ -1,29 +1,19 @@
 hr.content-divider{
-    background: url('http://i.stack.imgur.com/37Aip.png') no-repeat top center;
-    background-size: contain;
-    display: block;
-    height: 18px;
-    border: 0;
-    position: relative;
+  background: url('/static/images/pokeballs/pixelball.png');
+  background-size: contain;
+  display: block;
+  height: 30px;
+  border:0;
+  position: relative;
 }
 hr.content-divider:before,
-hr.content-divider:after {
+hr.content-divider:after{
   content: '';
   display: block;
-  height: 1px;
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: #696969;
-}
-hr.content-divider:before {
-    left: 0;
-    right: 50%;
-    margin-right: 10px;
-}
-hr.content-divider:after {
-    right: 0;
-    left: 50%;
-    margin-left: 10px;
+  position: absolute;
+  background: #696969;
+  height: 4px;
+  top: 15px;
 }
 
 .content-section {
