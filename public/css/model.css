@@ -1,5 +1,5 @@
 hr.content-divider{
-  background: url('/static/images/pokeballs/pixelball.png');
+  background: url('/static/images/pokeballs/pixelball.png') no-repeat top center;
   background-size: contain;
   display: block;
   height: 30px;
