@@ -10,6 +10,7 @@ hr.content-divider {
   background-repeat: no-repeat;
   height:30px;
   position: relative;
+  top: -15px;
 }
 
 /*hr.content-divider::after {
