@@ -4,6 +4,17 @@ from datetime import date
 if __name__ == "__main__":
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("public/html"))
 
+    conf = {
+        '/':{
+            'tools.sessions.on':True,
+            'tools.staticdir.root': os.path.abspath(os.getcwd())
+        },
+        '/static':{
+            'tools.staticdir.on':True,
+            'tools.staticdir.dir': './public'
+        }
+    }
+
     #Helper Classes
     class tournament():
         def __init__(self, name, date, first, second, third, prize="", challonge=""):
@@ -108,19 +119,6 @@ if __name__ == "__main__":
                     challonge_link = x.challonge
                     break
             return env.get_template("home.html").render(tournaments=sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
-
-
-
-    conf = {
-        '/':{
-            'tools.sessions.on':True,
-            'tools.staticdir.root': os.path.abspath(os.getcwd())
-        },
-        '/static':{
-            'tools.staticdir.on':True,
-            'tools.staticdir.dir': './public'
-        }
-    }
 
     cherrypy.tree.mount(home(), "/", conf)
     #cherrypy.tree.mount(view.dex(), "/dex", conf)
