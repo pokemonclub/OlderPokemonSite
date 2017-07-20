@@ -1,18 +1,18 @@
 hr.content-divider {
+  background-image: url('/static/images/pokeballs/pixelball.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:30px;
+  display: block;
+}
+
+hr.content-divider::after {
   padding: 0px;
   border: 0px;
   border-top: medium double #696969;
   color: #696969;
   text-align: center;
   background-color: #FFFFFF;
-}
-
-hr.content-divider::after {
-  background-image: url('/static/images/pokeballs/pixelball.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height:30px;
-  display: block;
 }
 
 .content-section {
