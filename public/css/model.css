@@ -6,7 +6,7 @@ hr.content-divider{
   border:0;
   position: relative;
 }
-hr.content-divider::before,
+/*hr.content-divider::before,
 hr.content-divider::after{
   content: '';
   display: block;
@@ -14,13 +14,25 @@ hr.content-divider::after{
   background: #696969;
   height: 4px;
   top: 15px;
-}
+}*/
 hr.content-divider::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #696969;
+  height: 1px;
+  top: 16px;
   left: 0;
   right: 50%;
   margin-right: 20px;
 }
 hr.content-divider::after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #696969;
+  height: 1px;
+  top: 14px;
   right: 0;
   left: 50%;
   margin-left: 20px;
