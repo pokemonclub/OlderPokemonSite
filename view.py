@@ -40,7 +40,7 @@ class home():
     tournament("Draft", date(2015, 10, 2), "Yair", "Tad Mikasa", "Chris Ngai"),
     tournament("Monochrome", date(2015, 9, 18), "Eduardo", "Javier Ayala", "Alex Nguyen"),
     tournament("OU", date(2015, 9, 4), "Javier Ayala", "Chris Ngai", "Shayda Sophia"),
-    tournament("OU", date(2015, 4, 24), "Jason Yan", "Khalia Flores", "NA"),
+    tournament("OU", date(2015, 4, 24), "Jason Yan", "Khaila Flores", "NA"),
     tournament("VGC", date(2015, 4, 8), "Sergio Camacho", "Javier Ayala", "Jason Yan"),
     tournament("Little Cup", date(2015, 3, 13), "Shayda Sophia", "Tad Mikasa", "Jose Madrid"),
     tournament("Never Used", date(2015, 2, 25), "Jose Madrid", "Jason Yan", "James Escoto"),
