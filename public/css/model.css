@@ -94,10 +94,37 @@ hr.content-divider::after{
   }
 }
 
-@media(max-width:991px) {
-  .img-calendar {
-    scrolling: no;
-    width: 100%;
-    height: auto;
+@media(max-width:736px) {
+  #about h1 {
+    font-size: 24px;
+  }
+
+  #about img {
+    height: 200px;
+  }
+
+  #about p {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:599px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .content-section {
+    padding: 10px 0px;
+  }
+
+  #about p {
+    padding: 0px 10px;
+  }
+
+  #about img {
+    height: 100px;
   }
 }
