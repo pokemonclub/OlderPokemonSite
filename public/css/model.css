@@ -32,7 +32,12 @@ hr.content-divider::after{
 
 #about p {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
+}
+
+#about img {
+  vertical-align: middle;
 }
 
 
