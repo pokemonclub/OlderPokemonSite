@@ -112,16 +112,16 @@ hr.content-divider::after{
 }
 
 @media(max-width:736px) {
-  #about h1 {
+  .container h1 {
     font-size: 24px;
+  }
+
+  .container p {
+    font-size: 14px;
   }
 
   #about img {
     height: 200px;
-  }
-
-  #about p {
-    font-size: 14px;
   }
 }
 
