@@ -64,11 +64,6 @@ hr.content-divider::after{
   height: auto;
 }
 
-.img-container {
-  margin: auto;
-  display: block;
-}
-
 .img-header {
   max-width: 50%;
 }
