@@ -30,11 +30,16 @@ hr.content-divider::after{
   margin-left: 20px;
 }
 
+
 .content-section {
   overflow: hidden;
   background: #FFFFFF;
   border-radius: 15px;
   padding: 50px;
+}
+
+.content-section p {
+  font-size: 18px;
 }
 
 .img-bracket {
