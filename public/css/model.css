@@ -38,6 +38,8 @@ hr.content-divider::after{
 
 #about img {
   vertical-align: middle;
+  height: 400px;
+  margin-left: 100px;
 }
 
 
