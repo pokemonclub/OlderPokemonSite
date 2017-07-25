@@ -44,8 +44,10 @@ hr.content-divider::after{
 
 .calendar-container {
     position: relative;
-    padding-bottom: 75% !important;
-    height: 0;
+    height: 500px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
