@@ -59,7 +59,8 @@ hr.content-divider::after{
 }
 
 .img-responsive {
-  max-height: 100%;
+  display: inline;
+  height: 100%;
 }
 
 .list-box {
