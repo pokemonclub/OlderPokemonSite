@@ -30,6 +30,11 @@ hr.content-divider::after{
   margin-left: 20px;
 }
 
+#about p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .content-section {
   overflow: hidden;
