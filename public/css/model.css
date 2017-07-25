@@ -58,6 +58,10 @@ hr.content-divider::after{
   max-width: 50%;
 }
 
+.img-responsive {
+  max-height: 100%;
+}
+
 .list-box {
   overflow-y: scroll;
   height: 500px;
