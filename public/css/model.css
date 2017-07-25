@@ -45,6 +45,7 @@ hr.content-divider::after{
 #events p {
   width: 75%;
   text-align: center;
+  margin: auto !important;
 }
 
 .calendar-container {
