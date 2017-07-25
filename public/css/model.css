@@ -33,7 +33,6 @@ hr.content-divider::after{
 #about p {
   display: inline-block;
   width: 50%;
-  vertical-align: middle;
 }
 
 
