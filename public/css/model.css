@@ -133,12 +133,19 @@ hr.content-divider::after{
     margin-left: auto;
   }
 
+
+  .container p {
+    padding: 0px 10px;
+    width: auto !important;
+  }
+
   .content-section {
     padding: 10px 0px;
   }
 
-  #about p {
-    padding: 0px 10px;
+  .calendar-container {
+    width: 100%;
+    margin: 0px 10px 0px 10px;
   }
 
   #about img {
