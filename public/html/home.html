@@ -33,7 +33,7 @@
         <h1 class="text-center">Tournament Results! <i class="fa fa-trophy"></i></h1>
         <img class="img-responsive img-half" src="/static/images/battleStart.gif">
         <div id="results" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
+          <!--<ol class="carousel-indicators">
             {% for t in tournaments %}
               {% if loop.index == 1 %}
             <li data-target="#results" data-slide-to="{{loop.index}}" class="active"></li>
@@ -41,7 +41,7 @@
             <li data-target="#results" data-slide-to="{{loop.index}}"></li>
               {% endif %}
             {% endfor %}
-          </ol>
+          </ol>-->
           <div class="carousel-inner">
             {% for t in tournaments %}
               {% if loop.index == 1 %}
