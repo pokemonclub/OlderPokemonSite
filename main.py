@@ -104,7 +104,7 @@ if __name__ == "__main__":
         @cherrypy.expose
         def index(self):
             challonge_link = ""
-            for x in sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True):
+            for x in sorted(self.tourneys, key=lambda tournament: tournament.datetime, reverse=True):
                 if x.challonge != "":
                     challonge_link = x.challonge
                     break
