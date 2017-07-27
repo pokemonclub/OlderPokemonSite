@@ -1,4 +1,5 @@
-import os, sys, cherrypy, jinja2, datetime
+import os, sys, cherrypy, jinja2
+from datetime import datetime
 
 if __name__ == "__main__":
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("public/html"))
