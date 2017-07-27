@@ -130,6 +130,7 @@ hr.content-divider::after{
   }
 
   #certTrainers img{
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -149,6 +150,10 @@ hr.content-divider::after{
 }
 
 @media(max-width:599px) {
+  #certTrainers img{
+    margin: 0px 10px;
+  }
+
   .container {
     padding-right: 0;
     padding-left: 0;
