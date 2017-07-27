@@ -47,7 +47,7 @@
               {% if loop.index == 1 %}
             <div class="item active">
               <h2>{{t.name}} Tournament Champions</h2><br>
-              <h3 class="text-muted">{{t.datetime.month}} {{t.datetime.day}} {{t.datetime.year}}</h3><br><br>
+              <h3 class="text-muted">{{t.datetime.month}}/{{t.datetime.day}}/{{t.datetime.year}}</h3><br><br>
               <p>
                 First Place: {{t.first}}<br>
                 Second Place: {{t.second}}<br>
@@ -57,7 +57,7 @@
               {% else %}
             <div class="item">
               <h2>{{t.name}} Tournament Champions</h2><br>
-              <h3 class="text-muted">{{t.datetime.month}} {{t.datetime.day}} {{t.datetime.year}}</h3><br><br>
+              <h3 class="text-muted">{{t.datetime.month}}/{{t.datetime.day}}/{{t.datetime.year}}</h3><br><br>
               <p>
                 First Place: {{t.first}}<br>
                 Second Place: {{t.second}}<br>
