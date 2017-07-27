@@ -140,6 +140,10 @@ hr.content-divider::after{
     font-size: 24px;
   }
 
+  .container h2 {
+    font-size: 20px;
+  }
+
   .container p {
     font-size: 14px;
   }
