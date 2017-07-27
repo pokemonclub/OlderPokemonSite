@@ -44,7 +44,7 @@ if __name__ == "__main__":
         tournament("Draft", datetime(2015, 10, 2,0,0), "Yair", "Tad Mikasa", "Chris Ngai"),
         tournament("Monochrome", datetime(2015, 9, 18,0,0), "Eduardo", "Javier Ayala", "Alex Nguyen"),
         tournament("OU", datetime(2015, 9, 4,0,0), "Javier Ayala", "Chris Ngai", "Shayda Sophia"),
-        tournament("OU", datetime(2015, 4, 24,0,0), "Jason Yan", "Khalia Flores", "NA"),
+        tournament("OU", datetime(2015, 4, 24,0,0), "Jason Yan", "Khaila Flores", "NA"),
         tournament("VGC", datetime(2015, 4, 8,0,0), "Sergio Camacho", "Javier Ayala", "Jason Yan"),
         tournament("Little Cup", datetime(2015, 3, 13,0,0), "Shayda Sophia", "Tad Mikasa", "Jose Madrid"),
         tournament("Never Used", datetime(2015, 2, 25,0,0), "Jose Madrid", "Jason Yan", "James Escoto"),
