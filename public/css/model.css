@@ -83,7 +83,7 @@ hr.content-divider::after{
   overflow-y: scroll;
 }
 
-.img-header {
+.img-half {
   max-width: 50%;
 }
 

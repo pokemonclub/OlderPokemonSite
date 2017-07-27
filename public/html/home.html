@@ -14,7 +14,7 @@
       <div class="content-section" id="about">
         <h1 class="text-center">Become A Fellow Champion, <a href="<!-- TODO -->">Join Us!</a></h1>
         <p>This club draws on nostalgia and is a growing community that is welcoming to all who share the same interest, or are just beginning to share that interest! Pokemon Club is new to Campus as of Spring 2015, but it is undeniable that this club provides its members with a sense of community outside of their rooms and outside of their jobs. Come join us at club, make new friends, rivals, and discover what it is like to be a part of our growing community. Remember, anyone can join, and there are no member fees! <a href="<!-- TODO -->">Sign up here!</a> You can also buy our Club T-shirt <a href="https://www.teepublic.com/show/372613-pokemon-club-t-shirt-2016">here!</a></p>
-        <img class="img-responsive img-circle img-header" alt="Pokeball" src="/static/images/pokeballs/pokeball0.png">
+        <img class="img-responsive img-circle img-half" alt="Pokeball" src="/static/images/pokeballs/pokeball0.png">
       </div>
 
       <hr class="content-divider">
@@ -31,18 +31,42 @@
       <!-- Tournament History Section -->
       <div class="content-section" id="certTrainers">
         <h1 class="text-center">Tournament Results! <i class="fa fa-trophy"></i></h1>
-        <img class="img-responsive center-block" src="/static/images/battleStart.gif">
-        <div class="text-center list-box">
-          <p>
+        <img class="img-responsive img-half" src="/static/images/battleStart.gif">
+        <div id="results" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
             {% for t in tournaments %}
-            {{t.date}}<br>
-            {{t.name}} Tournament Champions<br>
-            First Place: {{t.first}}<br>
-            Second Place: {{t.second}}<br>
-            Third Place: {{t.third}}<br>
-            <br>
+              {% if loop.index == 1 %}
+            <li data-target="#results" data-slide-to="{{loop.index}}" class="active"></li>
+              {% else %}
+            <li data-target="#results" data-slide-to="{{loop.index}}"></li>
+              {% endif %}
             {% endfor %}
-          </p>
+          </ol>
+          <div class="carousel-inner">
+            {% for t in tournaments %}
+              {% if loop.index == 1 %}
+            <div class="item active">
+              <h2>{{t.name}} Tournament Champions</h2><br>
+              <h3 class="text-muted">{{t.date}}</h3><br><br>
+              <p>
+                First Place: {{t.first}}<br>
+                Second Place: {{t.second}}<br>
+                Third Place: {{t.third}}<br>
+              </p>
+            </div>
+              {% else %}
+            <div class="item">
+              <h2>{{t.name}} Tournament Champions</h2><br>
+              <h3 class="text-muted">{{t.date}}</h3><br><br>
+              <p>
+                First Place: {{t.first}}<br>
+                Second Place: {{t.second}}<br>
+                Third Place: {{t.third}}<br>
+              </p>
+            </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
       </div>
 
@@ -57,7 +81,7 @@
 
       <div class="content-section" id="regulations">
         <h1 class="text-center">Tournament Regulations!</h1>
-        <img class="img-responsive img-header pull-right" src="/static/images/profOak.png">
+        <img class="img-responsive img-half pull-right" src="/static/images/profOak.png">
         <div class="text-center list-box">
           <p>
             {% for regulation in regulations  %}
