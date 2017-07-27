@@ -122,6 +122,18 @@ hr.content-divider::after{
   }
 }
 
+@media(max-width:991px) {
+  .carousel {
+    width: 100%;
+    text-align: center;
+    float: none !important;
+  }
+
+  #certTrainers img{
+    width: 100%;
+  }
+}
+
 @media(max-width:736px) {
   .container h1 {
     font-size: 24px;
