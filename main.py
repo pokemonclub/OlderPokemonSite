@@ -108,7 +108,7 @@ if __name__ == "__main__":
                 if x.challonge != "":
                     challonge_link = x.challonge
                     break
-            return env.get_template("home.html").render(tournaments=sorted(self.tourneys, key=lambda date: date.date_obj, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
+            return env.get_template("home.html").render(tournaments=sorted(self.tourneys, key=lambda tournament: tournament.datetime, reverse=True), regulations=sorted(self.regulations), officers=self.officers, c_link=challonge_link)
 
     conf = {
         '/':{
