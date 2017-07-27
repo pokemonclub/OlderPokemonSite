@@ -1,5 +1,4 @@
-import os, sys, cherrypy, jinja2
-from datetime import date
+import os, sys, cherrypy, jinja2, datetime
 
 if __name__ == "__main__":
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("public/html"))
@@ -34,30 +33,30 @@ if __name__ == "__main__":
     #Home Page
     class home():
         tourneys = [
-        tournament("Monotype", date(2015,11,20), "Nick Boyd", "Rianna \"the Bops\" Nandan", "Ty Garcia", challonge="http://challonge.com/sjsumonotypefall2015"),
-        tournament("Cute", date(2016, 3, 18), "Shayda Sophia", "Javier Ayala", "Brenna Botzheim"),
-        tournament("NU", date(2016, 3, 4), "Javier Ayala", "Claude Michel", "Will Giallo", challonge="http://challonge.com/sjsunuspring2016"),
-        tournament("Gen 1", date(2016, 2, 26), "Manuel Saucedo", "Javier Ayala", "Will Giallo"),
-        tournament("Team Battle", date(2016, 2, 19), "Shayda Sophia and Alex Vargas", "Tad Mikasa and Rianna \"the Bops\" Nandan", "Will Giallo and Joe Giallo"),
-        tournament("OU", date(2016, 2, 5), "Javier Ayala", "Tad Mikasa", "Ty Garcia"),
-        tournament("Halloween", date(2015, 10, 30), "Javier Ayala", "Tad Mikasa", "Chris Ngai"),
-        tournament("Little Cup", date(2015, 10, 16), "Nick Boyd", "Shayda Sophia", "Will Giallo and Alex Vargas - tied"),
-        tournament("Draft", date(2015, 10, 2), "Yair", "Tad Mikasa", "Chris Ngai"),
-        tournament("Monochrome", date(2015, 9, 18), "Eduardo", "Javier Ayala", "Alex Nguyen"),
-        tournament("OU", date(2015, 9, 4), "Javier Ayala", "Chris Ngai", "Shayda Sophia"),
-        tournament("OU", date(2015, 4, 24), "Jason Yan", "Khalia Flores", "NA"),
-        tournament("VGC", date(2015, 4, 8), "Sergio Camacho", "Javier Ayala", "Jason Yan"),
-        tournament("Little Cup", date(2015, 3, 13), "Shayda Sophia", "Tad Mikasa", "Jose Madrid"),
-        tournament("Never Used", date(2015, 2, 25), "Jose Madrid", "Jason Yan", "James Escoto"),
-        tournament("OU Draft", date(2016, 4, 22), "Chris Ngai", "Tad Mikasa", "Ty Garcia", challonge="http://challonge.com/2016SpringDraftTournament"),
-        tournament("Monotype", date(2016, 5, 6), "Rianna \"the Bops\" Nandan", "Shayda Sophia", "Alex Vargas", challonge="http://challonge.com/2016springmonotypetourney"),
-        tournament("OU", date(2016, 6, 9), "Tad Mikasa", "Raymond", "Joe Giallo", challonge="http://challonge.com/SJSUOUTOURNEY2016FALL"),
-        tournament("Teambuilder", date(2016, 6, 23), "Shashwath", "Jordan", "Javier Ayala", challonge="http://challonge.com/TBTSJSUF2016"),
-        tournament("Draft", date(2016, 10, 14), "Will Giallo", "Chris Ngai", "Nick Boyd", challonge="http://challonge.com/DraftTourneyF2016"),
-        tournament("Halloween", date(2016, 10, 28), "Raymond", "Tad Mikasa", "Rianna \"the Bops\" Nandan", challonge="http://challonge.com/HALLOWTOURNEYF2016"),
-        tournament("Find a Friend", date(2016, 11, 4), "Will and Shayda", "Tad and Mitchell", "Sean and Claude", challonge="http://challonge.com/TT2016F"),
-        tournament("Monotype", date(2016, 12, 2), "Rianna \"the Bops\" Nandan", "Nick Boyd", "Yair Aragundi", challonge="http://challonge.com/MonotypeFall16"),
-        tournament("Team Rocket", date(2017, 2, 3), "Nick Boyd", "Will Giallo", "Ed Martinez", challonge="http://challonge.com/SJSUTR2017")
+        tournament("Monotype", datetime(2015,11,20,0,0), "Nick Boyd", "Rianna \"the Bops\" Nandan", "Ty Garcia", challonge="http://challonge.com/sjsumonotypefall2015"),
+        tournament("Cute", datetime(2016, 3, 18,0,0), "Shayda Sophia", "Javier Ayala", "Brenna Botzheim"),
+        tournament("NU", datetime(2016, 3, 4,0,0), "Javier Ayala", "Claude Michel", "Will Giallo", challonge="http://challonge.com/sjsunuspring2016"),
+        tournament("Gen 1", datetime(2016, 2, 26,0,0), "Manuel Saucedo", "Javier Ayala", "Will Giallo"),
+        tournament("Team Battle", datetime(2016, 2, 19,0,0), "Shayda Sophia and Alex Vargas", "Tad Mikasa and Rianna \"the Bops\" Nandan", "Will Giallo and Joe Giallo"),
+        tournament("OU", datetime(2016, 2, 5,0,0), "Javier Ayala", "Tad Mikasa", "Ty Garcia"),
+        tournament("Halloween", datetime(2015, 10, 30,0,0), "Javier Ayala", "Tad Mikasa", "Chris Ngai"),
+        tournament("Little Cup", datetime(2015, 10, 16,0,0), "Nick Boyd", "Shayda Sophia", "Will Giallo and Alex Vargas - tied"),
+        tournament("Draft", datetime(2015, 10, 2,0,0), "Yair", "Tad Mikasa", "Chris Ngai"),
+        tournament("Monochrome", datetime(2015, 9, 18,0,0), "Eduardo", "Javier Ayala", "Alex Nguyen"),
+        tournament("OU", datetime(2015, 9, 4,0,0), "Javier Ayala", "Chris Ngai", "Shayda Sophia"),
+        tournament("OU", datetime(2015, 4, 24,0,0), "Jason Yan", "Khalia Flores", "NA"),
+        tournament("VGC", datetime(2015, 4, 8,0,0), "Sergio Camacho", "Javier Ayala", "Jason Yan"),
+        tournament("Little Cup", datetime(2015, 3, 13,0,0), "Shayda Sophia", "Tad Mikasa", "Jose Madrid"),
+        tournament("Never Used", datetime(2015, 2, 25,0,0), "Jose Madrid", "Jason Yan", "James Escoto"),
+        tournament("OU Draft", datetime(2016, 4, 22,0,0), "Chris Ngai", "Tad Mikasa", "Ty Garcia", challonge="http://challonge.com/2016SpringDraftTournament"),
+        tournament("Monotype", datetime(2016, 5, 6,0,0), "Rianna \"the Bops\" Nandan", "Shayda Sophia", "Alex Vargas", challonge="http://challonge.com/2016springmonotypetourney"),
+        tournament("OU", datetime(2016, 6, 9,0,0), "Tad Mikasa", "Raymond", "Joe Giallo", challonge="http://challonge.com/SJSUOUTOURNEY2016FALL"),
+        tournament("Teambuilder", datetime(2016, 6, 23,0,0), "Shashwath", "Jordan", "Javier Ayala", challonge="http://challonge.com/TBTSJSUF2016"),
+        tournament("Draft", datetime(2016, 10, 14,0,0), "Will Giallo", "Chris Ngai", "Nick Boyd", challonge="http://challonge.com/DraftTourneyF2016"),
+        tournament("Halloween", datetime(2016, 10, 28,0,0), "Raymond", "Tad Mikasa", "Rianna \"the Bops\" Nandan", challonge="http://challonge.com/HALLOWTOURNEYF2016"),
+        tournament("Find a Friend", datetime(2016, 11, 4,0,0), "Will and Shayda", "Tad and Mitchell", "Sean and Claude", challonge="http://challonge.com/TT2016F"),
+        tournament("Monotype", datetime(2016, 12, 2,0,0), "Rianna \"the Bops\" Nandan", "Nick Boyd", "Yair Aragundi", challonge="http://challonge.com/MonotypeFall16"),
+        tournament("Team Rocket", datetime(2017, 2, 3,0,0), "Nick Boyd", "Will Giallo", "Ed Martinez", challonge="http://challonge.com/SJSUTR2017")
         ]
 
         regulations = [
