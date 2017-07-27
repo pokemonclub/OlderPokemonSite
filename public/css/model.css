@@ -65,6 +65,17 @@ hr.content-divider::after{
     height: 100%;
 }
 
+.carousel {
+  width: 50%;
+  text-align: center;
+  float: right !important;
+}
+
+.carousel-control {
+  top: 50%;
+  bottom: 50%;
+  color: black !important;
+}
 
 .content-section {
   overflow: hidden;
