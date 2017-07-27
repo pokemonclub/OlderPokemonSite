@@ -7,10 +7,10 @@ if __name__ == "__main__":
 
     #Helper Classes
     class tournament():
-        def __init__(self, name, date, first, second, third, prize="", challonge=""):
+        def __init__(self, name, datetime, first, second, third, prize="", challonge=""):
             self.name = name
             self.date_obj = date
-            self.date = date.strftime("%d %B %Y")
+            self.datetime = datetime
             self.first = first
             self.second = second
             self.third = third
