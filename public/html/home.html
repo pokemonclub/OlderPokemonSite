@@ -115,10 +115,9 @@
               <h2>{{semester[0]}}</h2><br>
               <p>
                 {% for officer in semester %}
-                {% if loop.index != 1 %}
-                {{officer.position}}: {{officer.name}}<br>
-                {% endif %}
-                {% endfor %}
+                  {% if loop.index != 1 %}
+                    {{officer.position}}: {{officer.name}}<br>
+                  {% endif %}
                 {% endfor %}
               </p>
             </div>
@@ -130,7 +129,6 @@
                 {% if loop.index != 1 %}
                 {{officer.position}}: {{officer.name}}<br>
                 {% endif %}
-                {% endfor %}
                 {% endfor %}
               </p>
             </div>
