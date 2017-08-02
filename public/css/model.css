@@ -48,6 +48,11 @@ hr.content-divider::after{
   margin: auto !important;
 }
 
+#replay iframe {
+  width: 100%;
+  height: 800px;
+}
+
 .calendar-container {
     position: relative;
     height: 500px;
@@ -63,6 +68,7 @@ hr.content-divider::after{
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 0px 10px 0px 10px;
 }
 
 .carousel {
@@ -105,7 +111,7 @@ hr.content-divider::after{
 
 .list-box {
   overflow-y: scroll;
-  height: 500px;
+  height: 200px;
   width: auto;
 }
 
@@ -158,6 +164,11 @@ hr.content-divider::after{
     margin: 0px 10px;
   }
 
+  #replay iframe {
+    height: 500px;
+    padding: 0px 10px;
+  }
+
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -179,6 +190,7 @@ hr.content-divider::after{
     width: 100%;
     margin: 0px 10px 0px 10px;
   }
+
 
   #about img {
     height: 100px;
