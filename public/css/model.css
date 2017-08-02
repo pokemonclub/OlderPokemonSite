@@ -1,3 +1,7 @@
+body {
+  padding-top: 70px;
+}
+
 hr.content-divider{
   background: url('/static/images/pokeballs/pixelball.png') no-repeat top center;
   background-size: contain;
