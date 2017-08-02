@@ -48,6 +48,10 @@ hr.content-divider::after{
   margin: auto !important;
 }
 
+#hall-of-fame, #photos {
+  width: 50%;
+}
+
 #replay iframe {
   width: 100%;
   height: 800px;
