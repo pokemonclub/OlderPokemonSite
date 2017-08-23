@@ -5,6 +5,7 @@ body {
 header img {
   max-width: 100%;
   height: auto;
+  margin: auto;
 }
 
 hr.content-divider{
