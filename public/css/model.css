@@ -2,10 +2,12 @@ body {
   padding-top: 70px;
 }
 
+header {
+  text-align: center;
+}
+
 header img {
   max-width: 100%;
-  height: auto;
-  margin: auto;
 }
 
 hr.content-divider{
