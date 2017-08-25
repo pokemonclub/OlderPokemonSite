@@ -68,26 +68,26 @@ if __name__ == "__main__":
         regulations = [
         regulation("Club Tournament Regulations","https://docs.google.com/document/d/1d5JiFS_6BsYqIfMRnN7J20UPxzovNyXQ179j2T9YVAo/edit", False),
         regulation("Contest Tournament","https://docs.google.com/document/d/1q15GqdMIj3aiA3s64VkQRVKDJdbry0dsh2YZKelb9-w/edit", False),
-        regulation("Favorite Pokemon","https://docs.google.com/document/d/1Oi0WhzGesphmcFN4FWQk3DlJ_i-x3mFZZkVdVatRvUY/edit", False),
+        regulation("Favorite Pokemon","https://docs.google.com/document/d/1Oi0WhzGesphmcFN4FWQk3DlJ_i-x3mFZZkVdVatRvUY/edit?usp=sharing", True),
         regulation("Generation 1 Tournament","https://docs.google.com/document/d/1asPIVJJLAUJJiKZlfovNGp2ehuDs6oCmmeJPLhWHY4s/edit", False),
         regulation("Gym Regulations","https://docs.google.com/document/d/1Je7YDFOZtfAMwj9iELk-ZcIArCQJhAHKByBCUE3LpP8/edit", False),
-        regulation("Halloween","https://docs.google.com/document/d/1kdOmbO2ed2YTkEWv-oe2aD2rwAo8_nDSpQfgplIk11Q/edit", False),
-        regulation("Little Cup","https://docs.google.com/document/d/1sNPHsBBkmCBHNQLbrE-WLu5uuDwA5Oyhmx1jOtJuBbA/edit", True),
+        regulation("Halloween","https://docs.google.com/document/d/1kdOmbO2ed2YTkEWv-oe2aD2rwAo8_nDSpQfgplIk11Q/edit?usp=sharing", True),
+        regulation("Little Cup","https://docs.google.com/document/d/1sNPHsBBkmCBHNQLbrE-WLu5uuDwA5Oyhmx1jOtJuBbA/edit", False),
         regulation("Monochrome","https://docs.google.com/document/d/1MnnYwcmwCZFYDc8qf3UPaj0jVnhD3KL0PWoVMHKAZMA/edit", False),
-        regulation("Monotype","https://docs.google.com/document/d/1ulhvToTeYAy1GK7jaNPlTNUXa0mrdtygj-FVAzwTWbc/edit", True),
-        regulation("Never Used","https://docs.google.com/document/d/1t2TIuIz8kkz1UFA50STbpuc72n7OTxB5QyCEgK0dJI8/edit", False),
+        regulation("Monotype","https://docs.google.com/document/d/1ulhvToTeYAy1GK7jaNPlTNUXa0mrdtygj-FVAzwTWbc/edit?usp=sharing", True),
+        regulation("Never Used","https://docs.google.com/document/d/1t2TIuIz8kkz1UFA50STbpuc72n7OTxB5QyCEgK0dJI8/edit?usp=sharing", True),
         regulation("Not Fully Evolved (NFE)","https://docs.google.com/document/d/16WUmQfOOjksfjkBVevBS6zxz-WQMPxaMDuFM2I60yBE/edit", False),
         regulation("Over Used","https://docs.google.com/document/d/1mxHoxztFC5nWjzU5sLomVmFZQwlAuMvnmReiOkP_9UM/edit", False),
         regulation("OU Draft","https://docs.google.com/document/d/1T3W_VsrZBEPngOdFnJU531By72sBjATPef9AJI8EqXs/edit", False),
-        regulation("Point Buy","https://docs.google.com/document/d/1lA4bK2z5ehU4_DO4AIOXAg_KCDmZQhADB3qD9CIvUnA/edit", True),
-        regulation("Saint Patrick's Day","https://docs.google.com/document/d/1_rzUVCSVMF6zN453l3auAjTzqyM1_xTijDxDn_bYFpA/edit", True),
+        regulation("Point Buy","https://docs.google.com/document/d/1lA4bK2z5ehU4_DO4AIOXAg_KCDmZQhADB3qD9CIvUnA/edit", False),
+        regulation("Saint Patrick's Day","https://docs.google.com/document/d/1_rzUVCSVMF6zN453l3auAjTzqyM1_xTijDxDn_bYFpA/edit", False),
         regulation("Steal Yo Pokes","https://docs.google.com/document/d/1ZG0CCfdZwnkK6p_ZYIM5b1Xj0k8-9G2vjd0VgxspGjo/edit", False),
         regulation("Team Battle","https://docs.google.com/document/d/108gnHE_Gacj8aEkdSt4mY-PZ8TWHTXd3OgxQKuD2hJY/edit", False),
         regulation("Team Builder","https://docs.google.com/document/d/13gWOnTRv6mcjoqAslxa7VeBM2vB-F7GO71SIeMkHTwQ/edit", False),
-        regulation("Team Rocket","https://docs.google.com/document/d/1ZG0CCfdZwnkK6p_ZYIM5b1Xj0k8-9G2vjd0VgxspGjo/edit", True),
+        regulation("Team Rocket"," https://docs.google.com/document/d/1ZG0CCfdZwnkK6p_ZYIM5b1Xj0k8-9G2vjd0VgxspGjo/edit?usp=sharing", True),
         regulation("Tier Rotation","https://docs.google.com/document/d/1VDKwWH9FjWv3UZbCMwIKAl7WNDnhSH1r0g5KxEymAxY/edit", False),
         regulation("Ubers","https://docs.google.com/document/d/1o7C7RdxOGGt6tnWpyowq78-1ILPYIHmScMluaPHizxo/edit", False),
-        regulation("VGC","https://docs.google.com/document/d/1czvrFG9eMvloleFIT8Pn0X_mPWgTRZi4SRsPfecjjeY/edit", True)
+        regulation("VGC"," https://docs.google.com/document/d/1czvrFG9eMvloleFIT8Pn0X_mPWgTRZi4SRsPfecjjeY/edit?usp=sharing", True)
         ]
         for reg in regulations:
             if not reg.active:
