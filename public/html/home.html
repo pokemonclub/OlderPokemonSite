@@ -146,6 +146,82 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signuplabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h2>Register</h2>
+          <div class="modal-body">
+            <form class="form-horizontal" id="signup">
+              <fieldset>
+                <div class="control-group">
+                  <label class="control-label" for="firstName">First Name:</label>
+                  <div class="controls">
+                    <input id="firstName" name="firstName" class="form-control" type="text" placeholder="Ash" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="lastName">Last Name:</label>
+                  <div class="controls">
+                    <input id="lastName" name="lastName" class="form-control" type="text" placeholder="Ketchum" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="email">Email:</label>
+                  <div class="controls">
+                    <input id="email" name="email" class="form-control" type="text" placeholder="pokemonpres@gmail.com" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="sjsuid">SJSU ID (Use all zeroes if not a student):</label>
+                  <div class="controls">
+                    <input id="sjsuid" name="sjsuid" class="form-control" type="text" placeholder="000000000" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="user">Username:</label>
+                  <div class="controls">
+                    <input id="user" name="user" class="form-control" type="text" placeholder="MajorIdiocy" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="pass">Password:</label>
+                  <div class="controls">
+                    <input id="pass" name="pass" class="form-control" type="text" placeholder="xXxPASSWORDxXx" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="passconfirm">Confirm Password:</label>
+                  <div class="controls">
+                    <input id="passconfirm" name="passconfirm" class="form-control" type="text" placeholder="xXxPASSWORDxXx" required>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="signupbutton"></label>
+                    <div class="controls">
+                      <button id="signupbutton" name="signupbutton" class="btn btn-success">Sign Up</button>
+                    </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <center>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </center>
+          </div>
+        </div>
+      </div>
+
+    </div>
     {% include 'footer.html' %}
   </body>
 </html>
