@@ -121,10 +121,7 @@ if __name__ == "__main__":
         def formValidationQuery(self):
             conn = psycopg2.connect(host=hostname, user=username, password=password, dbname=database)
             cur = conn.cursor()
-            cur.execute("SELECT UserName, Email, SJSU_ID FROM(
-                SELECT * FROM Accounts, Users
-                WHERE Accounts.ID = Users.ID
-            )")
+            cur.execute("SELECT UserName, Email, SJSU_ID FROM (SELECT * FROM Accounts, Users WHERE Accounts.ID = Users.ID)")
             distincts={}
             distincts.usernames = []
             distincts.emails = []
