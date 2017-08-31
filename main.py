@@ -66,7 +66,7 @@ if __name__ == "__main__":
         ]
 
         regulations = [
-        regulation("Club Tournament Regulations","https://docs.google.com/document/d/1d5JiFS_6BsYqIfMRnN7J20UPxzovNyXQ179j2T9YVAo/edit", True),
+        regulation("Regulations for ALL Tournaments","https://docs.google.com/document/d/1d5JiFS_6BsYqIfMRnN7J20UPxzovNyXQ179j2T9YVAo/edit", True),
         regulation("Contest Tournament","https://docs.google.com/document/d/1q15GqdMIj3aiA3s64VkQRVKDJdbry0dsh2YZKelb9-w/edit", False),
         regulation("Favorite Pokemon","https://docs.google.com/document/d/1Oi0WhzGesphmcFN4FWQk3DlJ_i-x3mFZZkVdVatRvUY/edit?usp=sharing", True),
         regulation("Generation 1 Tournament","https://docs.google.com/document/d/1asPIVJJLAUJJiKZlfovNGp2ehuDs6oCmmeJPLhWHY4s/edit", False),
