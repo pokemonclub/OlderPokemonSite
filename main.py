@@ -62,7 +62,11 @@ if __name__ == "__main__":
         tournament("Halloween", datetime(2016, 10, 28,0,0), "Raymond", "Tad Mikasa", "Rianna \"the Bops\" Nandan", challonge="http://challonge.com/HALLOWTOURNEYF2016"),
         tournament("Find a Friend", datetime(2016, 11, 4,0,0), "Will and Shayda", "Tad and Mitchell", "Sean and Claude", challonge="http://challonge.com/TT2016F"),
         tournament("Monotype", datetime(2016, 12, 2,0,0), "Rianna \"the Bops\" Nandan", "Nick Boyd", "Yair Aragundi", challonge="http://challonge.com/MonotypeFall16"),
-        tournament("Team Rocket", datetime(2017, 2, 3,0,0), "Nick Boyd", "Will Giallo", "Ed Martinez", challonge="http://challonge.com/SJSUTR2017")
+        tournament("Team Rocket", datetime(2017, 2, 3,0,0), "Nick Boyd", "Will Giallo", "Ed Martinez", challonge="http://challonge.com/SJSUTR2017"),
+        tournament("Team Rocket 2.0", datetime(2017, 9, 15,0,0), "TBD", "TBD", "TBD", challonge="http://challonge.com/SJSUTR2017F"),
+        tournament("VGC", datetime(2017, 9, 29,0,0), "Andrew TBD", "Kevin Nguyen", "Anna Wong", challonge="http://challonge.com/SJSUVGC17F"),
+        tournament("NU", datetime(2017, 10, 13,0,0), "Nick Boyd", "Rianna \"the Bops\" Nandan", "Matt Griffin", challonge="http://challonge.com/SJSUNUF2017"),
+        tournament("Halloween", datetime(2017, 10, 27,0,0), "TBD", "TBD", "TBD", challonge="http://challonge.com/F17HT")
         ]
 
         regulations = [
@@ -100,6 +104,7 @@ if __name__ == "__main__":
                 regulations.remove(reg)
 
         officers = [
+        ["Fall 2017: Fresh Region", officer("Patrick Rettinhouse", "President"), officer("Shawn Jones-Trammell", "President"), officer("Jason Yan", "Treasurer"), officer("Ed Martinez", "Social Media Manager"),officer("Tad Mikasa", "Event Coordinator"), officer("Nick Boyd", "Web Developer"), officer("Kevin Nguyen", "Kevin"),
         ["Spring 2017: Another New Game", officer("Khaila Zherine Flores", "President"), officer("William Giallo", "Vice President"), officer("Jason Yan", "Treasurer"), officer("Kevin Nguyen", "Secretary"),officer("Roxas Nick", "Publicist"),officer("Nick Boyd", "Web Master"),officer("Claire Koperwas", "Jr. Web Master"),officer("Tad Mikasa", "Event Coordinator"),officer("Eduardo Martinez", "Social Media Manager"),officer("Patrick Rettinhouse", "Intern")],
         ["Fall 2016: Steeling the Sun", officer("Khaila Zherine Flores", "President"),officer("William Giallo", "Vice President"),officer("Jason Yan", "Treasurer"),officer("Shayda Sophia", "Secretary"),officer("Roxas Nick", "Publicist"),officer("Nick Boyd", "Web Master"),officer("Claire Koperwas", "Jr. Web Master"),officer("Rianna Nandan", "Historian"),officer("Tad Mikasa", "Event Coordinator"),officer("Eduardo Martinez", "Media Manager")],
         ["Spring 2016: Dawn of the Pokemon League", officer("Khaila Zherine Flores", "President"),officer("William Giallo", "Vice President"),officer("Jose Madrid", "Treasurer"),officer("Shayda Sophia", "Secretary"),officer("Alex Nguyen", "Publicist"),officer("Roxas Nick", "Publicist"),officer("Nick Boyd", "Web Master"),officer("Claire Koperwas", "Jr. Web Master"),officer("Javier Ayala-Mora", "Historian"),officer("Tad Mikasa", "Event Coordinator"),officer("Eduardo Martinez", "Media Manager")],
