@@ -8,7 +8,7 @@ password = 'Pokemon Spartans San Jose'
 database = 'signups'
 
 if __name__ == "__main__":
-    env = jinja2.Environment(loader=jinja2.FileSystemLoader("public/html"))
+    env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.join(os.path.dirname(__file__), 'public/html')))
 
 
 
